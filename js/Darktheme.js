@@ -12,7 +12,7 @@ let line1 = document.getElementById("line1");
 let line2 = document.getElementById("line2");
 let line3 = document.getElementById("line3");
 let botao = document.getElementById("botao");
-let buttons = document.querySelectorAll(".buttongroup")
+let buttons = document.querySelectorAll(".buttongroup");
 
 function emojicon() {
 
