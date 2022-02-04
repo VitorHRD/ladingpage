@@ -81,7 +81,7 @@ function backGroundBlack() {
     line3.style.backgroundColor = "white";
     inicial.style.backgroundColor = "#212529";
     document.body.style.backgroundColor = "#212529";
-    botao.classList.remove("btn-outline-secondary");
+    botao.classList.remove("btn-outline-dark");
     botao.classList.add("btn-light");
 }
 function backGroundWhite() {
@@ -93,12 +93,12 @@ function backGroundWhite() {
     inicial.style.backgroundColor = "#f8f9fa";
     document.body.style.backgroundColor = "white";
     botao.classList.remove("btn-light");
-    botao.classList.add("btn-outline-secondary")
+    botao.classList.add("btn-outline-dark")
 }
 function buttonsYellow() {
     for (let i = 0; i < buttons.length; i++) {
 
-        buttons[i].classList.remove("btn-danger");
+        buttons[i].classList.remove("btn-outline-danger");
         buttons[i].classList.add("btn-warning");
 
     }
@@ -106,8 +106,8 @@ function buttonsYellow() {
 function buttonsRed() {
     for (let i = 0; i < buttons.length; i++) {
 
-        buttons[i].classList.remove("btn-outline-warning");
-        buttons[i].classList.add("btn-danger");
-        
+        buttons[i].classList.remove("btn-warning");
+        buttons[i].classList.add("btn-outline-danger");
+
     }
 }
