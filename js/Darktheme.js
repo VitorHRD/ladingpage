@@ -88,7 +88,7 @@ function backGroundWhite(){
     inicial.style.backgroundColor="#f8f9fa";
     document.body.style.backgroundColor="white"
     botao.classList.remove("btn-warning");
-    botao.classList.add("btn-outline-secondary");
+    botao.classList.add("bbtn-outline-secondary");
 }
 
 
