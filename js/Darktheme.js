@@ -21,7 +21,7 @@ function emojicon() {
 
         emoji.style.display = "none";
         emoji2.style.display = "block";
-        img.src = "./imagens/logo.png";
+        img.src = "./imagens/logowhite.png";
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
@@ -47,6 +47,7 @@ function checkTheme() {
     if (localStorageTheme != null && localStorageTheme === "light") {
         emoji.style.display = "none";
         emoji2.style.display = "block";
+        img.src = "./imagens/white.png"
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
