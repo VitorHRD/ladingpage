@@ -13,6 +13,7 @@ let line2 = document.getElementById("line2");
 let line3 = document.getElementById("line3");
 let botao = document.getElementById("botao");
 let buttons = document.querySelectorAll(".buttongroup");
+let dropdown= document.querySelector(".dropdown-menu");
 
 function emojicon() {
 
@@ -21,6 +22,7 @@ function emojicon() {
         emoji.style.display = "none";
         emoji2.style.display = "block";
         img.src = "./imagens/logo.png";
+        dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
         buttonsRed();
@@ -31,6 +33,7 @@ function emojicon() {
         emoji.style.display = "block";
         emoji2.style.display = "none";
         img.src = "./imagens/logoblack.png";
+        dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
         buttonsYellow();
@@ -44,6 +47,7 @@ function checkTheme() {
     if (localStorageTheme != null && localStorageTheme === "light") {
         emoji.style.display = "none";
         emoji2.style.display = "block";
+        dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
         buttonsRed();
@@ -52,6 +56,7 @@ function checkTheme() {
         emoji2.style.display = "none";
         emoji.style.display = "block";
         img.src = "./imagens/logoblack.png"
+        dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
         buttonsYellow();
