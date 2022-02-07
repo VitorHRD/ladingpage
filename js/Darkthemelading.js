@@ -11,9 +11,10 @@ let navList = document.getElementById("nav-list");
 let line1 = document.getElementById("line1");
 let line2 = document.getElementById("line2");
 let line3 = document.getElementById("line3");
-let botao = document.getElementById("botao");
-let buttons = document.querySelectorAll(".buttongroup");
 let dropdown= document.querySelector(".dropdown-menu");
+let main = document.querySelector("main");
+let p = document.querySelectorAll("p");
+let subTitle = document.getElementById("subtitulo");
 
 function emojicon() {
 
@@ -25,7 +26,7 @@ function emojicon() {
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
-        buttonsRed();
+        pBlack();
         localStorage.setItem("theme", "light");
 
     }
@@ -36,7 +37,7 @@ function emojicon() {
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
-        buttonsYellow();
+        pWhite();
         localStorage.setItem("theme", "dark");
 
     }
@@ -51,7 +52,8 @@ function checkTheme() {
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
-        buttonsRed();
+        pBlack();
+     
     }
     else {
         emoji2.style.display = "none";
@@ -60,7 +62,8 @@ function checkTheme() {
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
-        buttonsYellow();
+        pWhite();
+    
     }
 }
 function colorWhite() {
@@ -68,6 +71,8 @@ function colorWhite() {
     dark1.style.color = "white";
     dark2.style.color = "white";
     dark3.style.color = "white";
+    subTitle.style.color ="white"
+    
 
 }
 function colorBlack() {
@@ -75,6 +80,8 @@ function colorBlack() {
     dark1.style.color = "black";
     dark2.style.color = "black";
     dark3.style.color = "black";
+    subTitle.style.color ="black"
+   
 }
 function backGroundBlack() {
     nav.style.backgroundColor = "black"
@@ -83,6 +90,7 @@ function backGroundBlack() {
     line2.style.backgroundColor = "white";
     line3.style.backgroundColor = "white";
     document.body.style.backgroundColor = "#212529";
+    main.style.backgroundColor ="#212529";
 
 }
 function backGroundWhite() {
@@ -91,22 +99,19 @@ function backGroundWhite() {
     line1.style.backgroundColor = "black";
     line2.style.backgroundColor = "black";
     line3.style.backgroundColor = "black";
+    main.style.backgroundColor ="#f3f5f7";
     document.body.style.backgroundColor = "white";
 
 }
-function buttonsYellow() {
-    for (let i = 0; i < buttons.length; i++) {
+function pWhite(){
+    for(let i = 0 ; i < p.length ;i++){
 
-        buttons[i].classList.remove("btn-outline-danger");
-        buttons[i].classList.add("btn-warning");
-
+            p[i].style.color="white"
     }
 }
-function buttonsRed() {
-    for (let i = 0; i < buttons.length; i++) {
+function pBlack(){
+    for(let i = 0 ; i < p.length ;i++){
 
-        buttons[i].classList.remove("btn-warning");
-        buttons[i].classList.add("btn-outline-danger");
-
+            p[i].style.color="black"
     }
 }

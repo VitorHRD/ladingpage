@@ -116,7 +116,7 @@ main{
 #subtitulo{
     font-size: 70px;
     color: #000000c4;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 #cartas{
     display: flex;
@@ -128,29 +128,34 @@ main{
 }
 .filhos{
     
-    width: 300px;
-    height: 440px;
+    width: 320px;
+    height: 470px;
     border-radius: 10px;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
 }
+h3{
+    text-align: center;
+    color: #198754;
+    margin-bottom: 15px;
+}
 
 #basico{
    border: #cd7f32 solid 3px;
     /* background-color: #0dcaf0; */
-    padding-top:20px;
+    padding-top:10px;
     color:#cd7f32 ;
 }
 #intermediario{
     /* background-color: #0d6efd; */
-    padding-top:20px;
+    padding-top:10px;
     border:	#e2c102 3px solid;
     color: #eccf29;
 }
 #completo{
     /* background-color: #6610f2; */
-    padding-top:20px;
+    padding-top:10px;
     border: #007FFF 3px solid;
     color:#007FFF;
 }
@@ -165,6 +170,7 @@ p{
   width: 100%;
   padding: 14px;
   color: white;
+  font-size: 18px;
 }
 .btt:hover{
     opacity: 0.8;
