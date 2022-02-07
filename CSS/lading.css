@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sarala&display=swap');
+*{
+    font-family: 'sarala',sans-serif;
+    
+}
+#logo{
+    width: 120px;
+   margin-left: 20px;
+   
+}
+
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    background-color:#FFFF;
+}
+h1{
+    font-family: 'Sarala',sans-serif;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: #000000c4;
+    letter-spacing: 0.5px;
+}
+#nav-list{
+    margin-top: 20px;
+    display: grid;
+	grid-auto-flow: column;
+    justify-content: space-around;
+    width: 700px;
+    grid-gap: 10px;
+    background-color: #FFFF;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-link{
+    padding: 0;
+   
+}
+
+li{
+    list-style: none;
+}
+.toggle {
+    position: relative;
+    height: 95% ;
+    padding: 0;
+    align-self: flex-start;
+    margin-right: 20px;
+    margin-bottom: 1.5px;
+}
+
+.toggle > input {
+    display: none;
+}
+
+.toggle > label {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 52px;
+    background-color: #f7f7f7;
+    border: 1.5px #a2e3e6 solid;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toggle > label:after {
+    position: absolute;
+    left: 0.1px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.836);
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+.toggle > input:checked ~ label:after {
+    left: 24px;
+}
+.toggle > input:disabled ~ label {
+    background-color: #d5d5d5;
+    pointer-events: none;
+}
+#emoji{
+    display: none;
+    text-align: center;
+    font-size: 30px;
+}
+#emoji2{
+    text-align: center;
+    font-size: 30px;
+}
+a:hover{
+    opacity: 0.8;
+}
+main{
+    height: 88vh;
+    background-color: #e6e9ec;
+}
+#titulo{
+  font-size: 80px;
+  color: #fc0000;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#subtitulo{
+    font-size: 70px;
+    color: #000000c4;
+    margin-bottom: 30px;
+}
+#cartas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+ 
+
+}
+.filhos{
+    width: 300px;
+    height: 440px;
+    border-radius: 20px;
+     color: #f8f9fa;
+}
+.titulosC{
+    
+    border-bottom: white 2px solid ;
+}
+#basico{
+
+    background-color: #0dcaf0;
+    padding-top:20px;
+}
+#intermediario{
+    background-color: #0d6efd;
+    padding-top:20px;
+}
+#completo{
+    background-color: #6610f2;
+    border-bottom: white 2px solid ;
+    padding-top:20px;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px,8px);
+
+}
+.mobile-menu.active .line2{
+    opacity:0;
+
+}
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px,-7px);
+
+}
+
