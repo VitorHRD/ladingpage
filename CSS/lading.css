@@ -105,7 +105,7 @@ a:hover{
 }
 main{
     height: 88vh;
-    background-color: #e6e9ec;
+    background-color: #f3f5f7;
 }
 #titulo{
   font-size: 80px;
@@ -127,29 +127,67 @@ main{
 
 }
 .filhos{
+    
     width: 300px;
     height: 440px;
-    border-radius: 20px;
-     color: #f8f9fa;
+    border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
 }
-.titulosC{
-    
-    border-bottom: white 2px solid ;
-}
-#basico{
 
-    background-color: #0dcaf0;
+#basico{
+   border: #cd7f32 solid 3px;
+    /* background-color: #0dcaf0; */
     padding-top:20px;
+    color:#cd7f32 ;
 }
 #intermediario{
-    background-color: #0d6efd;
+    /* background-color: #0d6efd; */
     padding-top:20px;
+    border:	#e2c102 3px solid;
+    color: #eccf29;
 }
 #completo{
-    background-color: #6610f2;
-    border-bottom: white 2px solid ;
+    /* background-color: #6610f2; */
     padding-top:20px;
+    border: #007FFF 3px solid;
+    color:#007FFF;
 }
+p{
+    margin-bottom: 12px;
+    margin-left: 5px;
+    text-align: center;
+    color: black;
+}
+.btt{
+  border-radius: 5px;
+  width: 100%;
+  padding: 14px;
+  color: white;
+}
+.btt:hover{
+    opacity: 0.8;
+}
+#TB{
+    border-bottom: 3px #cd7f32 solid;
+}
+#TG{
+    border-bottom: 3px #eecb03 solid;
+}
+#TD{
+    border-bottom: 3px #007FFF solid;
+}
+#BB{
+    background-color: #cd7f32;
+}
+#BG{
+    background-color: #e2c102;
+}
+#BD{
+    background-color: #007FFF;
+}
+
 
 @keyframes navLinkFade{
     from{
