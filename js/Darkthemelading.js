@@ -46,6 +46,7 @@ window.onload = checkTheme();
 function checkTheme() {
     let localStorageTheme = localStorage.getItem("theme");
     if (localStorageTheme != null && localStorageTheme === "light") {
+
         emoji.style.display = "none";
         emoji2.style.display = "block";
         img.src = "./imagens/Logowhite.png"
@@ -56,6 +57,7 @@ function checkTheme() {
      
     }
     else {
+        
         emoji2.style.display = "none";
         emoji.style.display = "block";
         img.src = "./imagens/logoblack.png"
@@ -67,6 +69,7 @@ function checkTheme() {
     }
 }
 function colorWhite() {
+
     dark.style.color = "white";
     dark1.style.color = "white";
     dark2.style.color = "white";
@@ -76,6 +79,7 @@ function colorWhite() {
 
 }
 function colorBlack() {
+
     dark.style.color = "black";
     dark1.style.color = "black";
     dark2.style.color = "black";
@@ -84,6 +88,7 @@ function colorBlack() {
    
 }
 function backGroundBlack() {
+
     nav.style.backgroundColor = "black"
     navList.style.backgroundColor = "rgba(0, 0, 0, 0.562)";
     line1.style.backgroundColor = "white";
@@ -94,6 +99,7 @@ function backGroundBlack() {
 
 }
 function backGroundWhite() {
+
     nav.style.backgroundColor = "white";
     navList.style.backgroundColor = "white";
     line1.style.backgroundColor = "black";
@@ -104,11 +110,13 @@ function backGroundWhite() {
 
 }
 function pWhite(){
+
     for(let i = 0 ; i < p.length ;i++){
 
             p[i].style.color="white"
     }
 }
+
 function pBlack(){
     for(let i = 0 ; i < p.length ;i++){
 

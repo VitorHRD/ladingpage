@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sarala&display=swap');
 *{
     font-family: 'sarala',sans-serif;
-    
 }
 #logo{
     width: 120px;
    margin-left: 20px;
-   
 }
-
 nav{
     display: flex;
     align-items:center ;
@@ -24,7 +21,6 @@ h1{
     font-weight: 600;
     
 }
-
 h2{
     text-align: center;
     font-size: 60px;
@@ -50,7 +46,6 @@ a{
 
 .nav-link{
     padding: 0;
-   
 }
 
 li{
@@ -123,7 +118,6 @@ li{
     justify-content:center;
     align-items: center;
     background-color:#f8f9fa;
-    
 }
 #imginicial{
   width: 400px;
@@ -146,7 +140,6 @@ li{
 }
 .btn:hover{
     border: 1.5px white solid;
-   
 }
 a:hover{
     opacity: 0.8;
@@ -191,7 +184,6 @@ a:hover{
     }
     .mobile-menu{
         display: block;
-        
     }
     #nav-list.active{
         transform: translateX(0);
@@ -223,15 +215,12 @@ h2{
 }
 .mobile-menu.active .line1{
     transform: rotate(-45deg) translate(-8px,8px);
-
 }
 .mobile-menu.active .line2{
     opacity:0;
-
 }
 .mobile-menu.active .line3{
     transform: rotate(45deg) translate(-5px,-7px);
-
 }
 
 

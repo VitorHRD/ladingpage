@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sarala&display=swap');
 *{
     font-family: 'sarala',sans-serif;
-    
 }
 #logo{
     width: 120px;
    margin-left: 20px;
    
 }
-
 nav{
     display: flex;
     align-items:center ;
@@ -19,7 +17,6 @@ h1{
     font-family: 'Sarala',sans-serif;
     text-align: center;
 }
-
 h2{
     text-align: center;
     color: #000000c4;
@@ -38,13 +35,9 @@ a{
     text-decoration: none;
     color: black;
 }
-
-
 .nav-link{
     padding: 0;
-   
 }
-
 li{
     list-style: none;
 }
@@ -56,7 +49,6 @@ li{
     margin-right: 20px;
     margin-bottom: 1.5px;
 }
-
 .toggle > input {
     display: none;
 }
@@ -103,7 +95,6 @@ li{
 a:hover{
     opacity: 0.8;
 }
-
 .mobile-menu{
     display: none;
     cursor: pointer;
@@ -135,11 +126,8 @@ main{
     justify-content: space-around;
     align-items: center;
     width: 100vw;
- 
-
 }
 .filhos{
-    
     width: 320px;
     height: 470px;
     border-radius: 10px;
@@ -155,18 +143,15 @@ h3{
 
 #basico{
    border: #cd7f32 solid 3px;
-    /* background-color: #0dcaf0; */
     padding-top:10px;
     color:#cd7f32 ;
 }
 #intermediario{
-    /* background-color: #0d6efd; */
     padding-top:10px;
     border:	#e2c102 3px solid;
     color: #eccf29;
 }
 #completo{
-    /* background-color: #6610f2; */
     padding-top:10px;
     border: #007FFF 3px solid;
     color:#007FFF;
@@ -246,7 +231,6 @@ p{
 }
 .mobile-menu{
   display: block;
-  
 }
 #nav-list.active{
   transform: translateX(0);
@@ -264,9 +248,7 @@ p{
 #subtitulo{
     font-size: 40px;
 }
-
 }
-
 @keyframes navLinkFade{
     from{
         opacity:0;
@@ -279,14 +261,11 @@ p{
 }
 .mobile-menu.active .line1{
     transform: rotate(-45deg) translate(-8px,8px);
-
 }
 .mobile-menu.active .line2{
     opacity:0;
-
 }
 .mobile-menu.active .line3{
     transform: rotate(45deg) translate(-5px,-7px);
-
 }
 
