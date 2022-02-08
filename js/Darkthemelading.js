@@ -42,7 +42,9 @@ function emojicon() {
 
     }
 }
+
 window.onload = checkTheme();
+
 function checkTheme() {
     let localStorageTheme = localStorage.getItem("theme");
     if (localStorageTheme != null && localStorageTheme === "light") {
@@ -57,7 +59,7 @@ function checkTheme() {
      
     }
     else {
-        
+
         emoji2.style.display = "none";
         emoji.style.display = "block";
         img.src = "./imagens/logoblack.png"
@@ -68,6 +70,7 @@ function checkTheme() {
     
     }
 }
+
 function colorWhite() {
 
     dark.style.color = "white";
@@ -78,6 +81,7 @@ function colorWhite() {
     
 
 }
+
 function colorBlack() {
 
     dark.style.color = "black";
@@ -87,6 +91,7 @@ function colorBlack() {
     subTitle.style.color ="black"
    
 }
+
 function backGroundBlack() {
 
     nav.style.backgroundColor = "black"
@@ -98,6 +103,7 @@ function backGroundBlack() {
     main.style.backgroundColor ="#212529";
 
 }
+
 function backGroundWhite() {
 
     nav.style.backgroundColor = "white";
@@ -109,6 +115,7 @@ function backGroundWhite() {
     document.body.style.backgroundColor = "white";
 
 }
+
 function pWhite(){
 
     for(let i = 0 ; i < p.length ;i++){

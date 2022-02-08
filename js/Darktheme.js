@@ -15,6 +15,7 @@ let botao = document.getElementById("botao");
 let buttons = document.querySelectorAll(".buttongroup");
 let dropdown= document.querySelector(".dropdown-menu");
 
+
 function emojicon() {
 
     if (emoji.style.display == "block") {
@@ -30,6 +31,7 @@ function emojicon() {
 
     }
     else {
+
         emoji.style.display = "block";
         emoji2.style.display = "none";
         img.src = "./imagens/logoblack.png";
@@ -42,7 +44,9 @@ function emojicon() {
     }
 }
 window.onload = checkTheme();
+
 function checkTheme() {
+
     let localStorageTheme = localStorage.getItem("theme");
     if (localStorageTheme != null && localStorageTheme === "light") {
 
@@ -67,6 +71,7 @@ function checkTheme() {
 
     }
 }
+
 function colorWhite() {
 
     dark.style.color = "white";
@@ -77,6 +82,7 @@ function colorWhite() {
     h1.style.color = "#ffc107";
 
 }
+
 function colorBlack() {
 
     dark.style.color = "black";
@@ -87,6 +93,7 @@ function colorBlack() {
     h1.style.color = "#fc0000";
 
 }
+
 function backGroundBlack() {
 
     nav.style.backgroundColor = "black"
@@ -100,6 +107,7 @@ function backGroundBlack() {
     botao.classList.add("btn-light");
 
 }
+
 function backGroundWhite() {
 
     nav.style.backgroundColor = "white";
@@ -113,6 +121,7 @@ function backGroundWhite() {
     botao.classList.add("btn-outline-dark")
 
 }
+
 function buttonsYellow() {
     for (let i = 0; i < buttons.length; i++) {
 
@@ -121,6 +130,7 @@ function buttonsYellow() {
 
     }
 }
+
 function buttonsRed() {
     for (let i = 0; i < buttons.length; i++) {
 
