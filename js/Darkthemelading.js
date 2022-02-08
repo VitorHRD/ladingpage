@@ -1,5 +1,5 @@
-let h1 = document.querySelector("h1")
-let h2 = document.querySelector("h2")
+let h1 = document.querySelector("h1");
+let h2 = document.querySelector("h2");
 let inicial = document.getElementById("inicial");
 let img = document.getElementById("logo");
 let dark = document.getElementById("dark");

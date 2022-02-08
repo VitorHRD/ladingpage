@@ -103,6 +103,18 @@ li{
 a:hover{
     opacity: 0.8;
 }
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background:black;
+    margin:8px;
+    transition: 0.3s;
+}
 main{
     height: 88vh;
     background-color: #f3f5f7;
@@ -193,7 +205,67 @@ p{
 #BD{
     background-color: #007FFF;
 }
+@media(max-width:1400px){
+    .filhos{
+        height: 400px;
+    }
+    p{
+        margin-bottom:7px ;
+    }
+    #titulo{
+        font-size: 60px;
+    }
+    #subtitulo{
+        font-size: 40px;
+    }
+    h3{
+        margin: 10px;
+    }
+    main{
+        height: 100%;
+    }
+}
+@media (max-width:800px){
+#nav-list{
+    display:flex;
+  position: absolute;
+  top:7.5vh;
+  right: 0%;
+  width: 50vw;
+  height: 95vh;
+  background:rgb(255, 255, 255);
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  transform:translateX(100%) ;
+  transition: transform 0.3s ease-in;
+}
+#nav.list li{
+  margin-left:0;
+ opacity: 0;
+}
+.mobile-menu{
+  display: block;
+  
+}
+#nav-list.active{
+  transform: translateX(0);
+}
+#cartas{
+    display: block;
+}
+.filhos{
+    margin: auto;
+    margin-bottom: 10px;
+}
+#titulo{
+    font-size: 50px;
+}
+#subtitulo{
+    font-size: 40px;
+}
 
+}
 
 @keyframes navLinkFade{
     from{
