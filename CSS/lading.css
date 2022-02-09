@@ -124,7 +124,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 88vh;
+    height: 89vh;
      background-color: #f3f5f7;  
  
 }
@@ -143,7 +143,28 @@ main{
     padding: 10px;
     font-size: 20px;
 }
-
+@media (min-width:1500px){
+ h1{
+     font-size:90px;
+ }
+ h2{
+     font-size: 50px;
+ }
+ p{
+     font-size: 20px;
+ }
+}
+@media (max-width:1000px){
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        width: 90vw;
+    }
+}
 @media (max-width:800px){
    main{
        height: 100vh;
