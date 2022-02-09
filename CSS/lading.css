@@ -30,11 +30,12 @@ h2{
 p{
 
     text-align: center;
-    width: 50vw;
+    width: 60vw;
     font-size: 18px;
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.822);
     margin-bottom: 30px;
+
 }
 #nav-list{
     margin-top: 20px;
@@ -134,7 +135,7 @@ main{
 }
 #center{
     display: flex;
-    align-items: center;
+      align-items: center;
     justify-content: space-around;
     width: 100vw;
 }
