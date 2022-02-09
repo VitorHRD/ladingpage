@@ -145,6 +145,16 @@ main{
 }
 
 @media (max-width:800px){
+   main{
+       height: 100vh;
+   }
+    h1{
+        font-size: 50px;
+    }
+    p{
+        width: 100vw;
+        margin: 10px;
+    }
     #nav-list{
         display:flex;
       position: absolute;
