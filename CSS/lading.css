@@ -166,8 +166,10 @@ main{
     }
 }
 @media (max-width:800px){
-   main{
+   
+    main{
        height: 100vh;
+       display: block;
    }
     h1{
         font-size: 50px;
