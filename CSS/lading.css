@@ -16,11 +16,25 @@ nav{
 h1{
     font-family: 'Sarala',sans-serif;
     text-align: center;
+    font-size: 70px;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 h2{
     text-align: center;
     color: #000000c4;
     letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+p{
+
+    text-align: center;
+    width: 50vw;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.822);
+    margin-bottom: 30px;
 }
 #nav-list{
     margin-top: 20px;
@@ -107,165 +121,72 @@ a:hover{
     transition: 0.3s;
 }
 main{
-    height: 88vh;
-    background-color: #f3f5f7;
-}
-#titulo{
-  font-size: 80px;
-  color: #ff0000;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-#subtitulo{
-    font-size: 70px;
-    color: #000000c4;
-    margin-bottom: 10px;
-}
-#cartas{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    height: 88vh;
+     background-color: #f3f5f7;  
+ 
+}
+
+#animation{
+    width: 600px;
+}
+#center{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100vw;
 }
-.filhos{
-    width: 320px;
-    height: 470px;
-    border-radius: 10px;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-}
-h3{
-    text-align: center;
-    color: #198754;
-    margin-bottom: 15px;
+#btt{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
 }
 
-#basico{
-   border: #cd7f32 solid 3px;
-    padding-top:10px;
-    color:#cd7f32 ;
-}
-#intermediario{
-    padding-top:10px;
-    border:	#e2c102 3px solid;
-    color: #eccf29;
-}
-#completo{
-    padding-top:10px;
-    border: #007FFF 3px solid;
-    color:#007FFF;
-}
-p{
-    margin-bottom: 12px;
-    margin-left: 5px;
-    text-align: center;
-    color: black;
-}
-.btt{
-  border-radius: 5px;
-  width: 100%;
-  padding: 14px;
-  color: white;
-  font-size: 18px;
-}
-.btt:hover{
-    opacity: 0.8;
-}
-#TB{
-    border-bottom: 3px #cd7f32 solid;
-}
-#TG{
-    border-bottom: 3px #eecb03 solid;
-}
-#TD{
-    border-bottom: 3px #007FFF solid;
-}
-#BB{
-    background-color: #cd7f32;
-}
-#BG{
-    background-color: #e2c102;
-}
-#BD{
-    background-color: #007FFF;
-}
-@media(max-width:1400px){
-    .filhos{
-        height: 400px;
-    }
-    p{
-        margin-bottom:7px ;
-    }
-    #titulo{
-        font-size: 60px;
-    }
-    #subtitulo{
-        font-size: 40px;
-    }
-    h3{
-        margin: 10px;
-    }
-    main{
-        height: 100%;
-    }
-}
 @media (max-width:800px){
-#nav-list{
-    display:flex;
-  position: absolute;
-  top:7.5vh;
-  right: 0%;
-  width: 50vw;
-  height: 95vh;
-  background:rgb(255, 255, 255);
-  flex-direction: column;
-  align-items:center;
-  justify-content: space-around;
-  transform:translateX(100%) ;
-  transition: transform 0.3s ease-in;
+    #nav-list{
+        display:flex;
+      position: absolute;
+      top:7.5vh;
+      right: 0%;
+      width: 50vw;
+      height: 95vh;
+      background:rgb(255, 255, 255);
+      flex-direction: column;
+      align-items:center;
+      justify-content: space-around;
+      transform:translateX(100%) ;
+      transition: transform 0.3s ease-in;
+    }
+    #nav.list li{
+      margin-left:0;
+     opacity: 0;
+    }
+    .mobile-menu{
+      display: block;
+    }
+    #nav-list.active{
+      transform: translateX(0);
+    }
 }
-#nav.list li{
-  margin-left:0;
- opacity: 0;
-}
-.mobile-menu{
-  display: block;
-}
-#nav-list.active{
-  transform: translateX(0);
-}
-#cartas{
-    display: block;
-}
-.filhos{
-    margin: auto;
-    margin-bottom: 10px;
-}
-#titulo{
-    font-size: 50px;
-}
-#subtitulo{
-    font-size: 40px;
-}
-}
-@keyframes navLinkFade{
-    from{
+    @keyframes navLinkFade{
+        from{
+            opacity:0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity:1;
+            transform: translateX(0);
+        }
+    }
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px,8px);
+    }
+    .mobile-menu.active .line2{
         opacity:0;
-        transform: translateX(50px);
     }
-    to{
-        opacity:1;
-        transform: translateX(0);
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px,-7px);
     }
-}
-.mobile-menu.active .line1{
-    transform: rotate(-45deg) translate(-8px,8px);
-}
-.mobile-menu.active .line2{
-    opacity:0;
-}
-.mobile-menu.active .line3{
-    transform: rotate(45deg) translate(-5px,-7px);
-}
-
+    
