@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sarala&display=swap');
+*{
+    font-family: 'sarala',sans-serif;
+}
+#logo{
+    width: 120px;
+   margin-left: 20px;
+   
+}
+
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    background-color:#FFFF;
+}
+h1{
+    font-family: 'Sarala',sans-serif;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+    
+    
+}
+p{
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+#nav-list{
+    margin-top: 20px;
+    display: grid;
+	grid-auto-flow: column;
+    justify-content: space-around;
+    width: 700px;
+    grid-gap: 10px;
+    background-color: #FFFF;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-link{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.toggle {
+    position: relative;
+    height: 95% ;
+    padding: 0;
+    align-self: flex-start;
+    margin-right: 20px;
+    margin-bottom: 1.5px;
+}
+.toggle > input {
+    display: none;
+}
+
+.toggle > label {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 52px;
+    background-color: #f7f7f7;
+    border: 1.5px #a2e3e6 solid;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toggle > label:after {
+    position: absolute;
+    left: 0.1px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.836);
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+.toggle > input:checked ~ label:after {
+    left: 24px;
+}
+.toggle > input:disabled ~ label {
+    background-color: #d5d5d5;
+    pointer-events: none;
+}
+#emoji{
+    display: none;
+    text-align: center;
+    font-size: 30px;
+}
+#emoji2{
+    text-align: center;
+    font-size: 30px;
+}
+a:hover{
+    opacity: 0.8;
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background:black;
+    margin:8px;
+    transition: 0.3s;
+}
+#imgmain{
+    width: 420px;
+    height: 215px;
+}
+.objetivo{
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 320px;
+    border: #000 solid 0.4px;
+    border-bottom:none ;
+    border-left: none;
+    border-right: none;
+}
+.texto{
+    width: 40vw;
+}
+#imgsec{
+    width: 500px;
+}
+@media (max-width:1400px){
+    h1{
+        font-size: 50;
+    }
+    p{
+        font-size: 15px;
+    }
+    #imgmain{
+        width: 400px;
+        height: 200px;
+    }
+    #imgsec{
+        width: 400px;
+    }
+    .objetivo{
+        height: 260px;
+    }
+    .texto{
+        width: 55vw;
+    }
+  body{
+      background-color:#f3f5f7 ;
+  }
+}
+@media (max-width:800px){
+    #nav-list{
+        display:flex;
+      position: absolute;
+      top:7.5vh;
+      right: 0%;
+      width: 50vw;
+      height: 95vh;
+      background:rgb(255, 255, 255);
+      flex-direction: column;
+      align-items:center;
+      justify-content: space-around;
+      transform:translateX(100%) ;
+      transition: transform 0.3s ease-in;
+    }
+    #nav.list li{
+      margin-left:0;
+     opacity: 0;
+    }
+    .mobile-menu{
+      display: block;
+    }
+    #nav-list.active{
+      transform: translateX(0);
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 11px;
+    }
+    #imgmain{
+        width: 200px;
+        height: 100px;
+    }
+    .objetivo{
+        height: 220px;
+    }
+    #imgsec{
+        width: 200px;
+    }
+    .texto{
+        width: 65vw;
+    }
+
+}
+@media (max-width:500px){
+    #imgsec{
+        display: block;
+        width: 100px;
+    }
+    #imgmain{
+        width: 100px;
+        height: 50px;
+    }
+    .texto{
+        width: 65vw;
+        
+    }
+    .objetivo{
+        height: 300px;
+    }
+        
+
+}
+    @keyframes navLinkFade{
+        from{
+            opacity:0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity:1;
+            transform: translateX(0);
+        }
+    }
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px,8px);
+    }
+    .mobile-menu.active .line2{
+        opacity:0;
+    }
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px,-7px);
+    }
+    

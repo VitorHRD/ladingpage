@@ -1,5 +1,4 @@
 let h1 = document.querySelector("h1");
-let h2 = document.querySelector("h2");
 let inicial = document.getElementById("inicial");
 let img = document.getElementById("logo");
 let dark = document.getElementById("dark");
@@ -14,7 +13,8 @@ let line3 = document.getElementById("line3");
 let dropdown= document.querySelector(".dropdown-menu");
 let main = document.querySelector("main");
 let p = document.querySelectorAll("p");
-let subTitle = document.getElementById("subtitulo");
+let sobre = document.getElementById("sobre");
+let img2 = document.getElementById("imgmain")
 
 function emojicon() {
 
@@ -23,6 +23,7 @@ function emojicon() {
         emoji.style.display = "none";
         emoji2.style.display = "block";
         img.src = "./imagens/Logowhite.png";
+        img2.src = "./imagens/Logowhite.png";
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
@@ -34,6 +35,7 @@ function emojicon() {
         emoji.style.display = "block";
         emoji2.style.display = "none";
         img.src = "./imagens/logoblack.png";
+        img2.src = "./imagens/logoblack.png";
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
@@ -52,6 +54,7 @@ function checkTheme() {
         emoji.style.display = "none";
         emoji2.style.display = "block";
         img.src = "./imagens/Logowhite.png"
+        img2.src = "./imagens/logowhite.png"
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
@@ -63,13 +66,13 @@ function checkTheme() {
         emoji2.style.display = "none";
         emoji.style.display = "block";
         img.src = "./imagens/logoblack.png"
+        img2.src = "./imagens/logoblack.png"
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
         pWhite();
     
     }
-    
 }
 
 function colorWhite() {
@@ -78,8 +81,7 @@ function colorWhite() {
     dark1.style.color = "white";
     dark2.style.color = "white";
     dark3.style.color = "white";
-    subTitle.style.color ="white"
-    
+    pWhite();
 
 }
 
@@ -89,7 +91,7 @@ function colorBlack() {
     dark1.style.color = "black";
     dark2.style.color = "black";
     dark3.style.color = "black";
-    subTitle.style.color ="black";
+    pBlack();
    
 }
 
@@ -101,8 +103,7 @@ function backGroundBlack() {
     line2.style.backgroundColor = "white";
     line3.style.backgroundColor = "white";
     document.body.style.backgroundColor = "#212529";
-    main.style.backgroundColor = "#212529"
-    
+    main.style.backgroundColor ="#212529";
 
 }
 
@@ -114,10 +115,9 @@ function backGroundWhite() {
     line2.style.backgroundColor = "black";
     line3.style.backgroundColor = "black";
     main.style.backgroundColor ="#f3f5f7";
-    document.body.style.backgroundColor = "white";
+    document.body.style.backgroundColor = "#f3f5f7";
 
 }
-
 function pWhite(){
 
     for(let i = 0 ; i < p.length ;i++){
