@@ -101,9 +101,7 @@ function backGroundBlack() {
     line2.style.backgroundColor = "white";
     line3.style.backgroundColor = "white";
     document.body.style.backgroundColor = "#212529";
-    main.style.backgroundColor = "#212529"
-    
-
+    main.style.backgroundColor = "#212529";
 }
 
 function backGroundWhite() {

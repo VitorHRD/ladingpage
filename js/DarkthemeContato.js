@@ -1,6 +1,4 @@
-let h1 = document.querySelector("h1");
-let h2 = document.querySelector("h2");
-let inicial = document.getElementById("inicial");
+let h1 = document.querySelectorAll("h1");
 let img = document.getElementById("logo");
 let dark = document.getElementById("dark");
 let dark1 = document.getElementById("dark1");
@@ -11,10 +9,9 @@ let navList = document.getElementById("nav-list");
 let line1 = document.getElementById("line1");
 let line2 = document.getElementById("line2");
 let line3 = document.getElementById("line3");
-let botao = document.getElementById("botao");
-let buttons = document.querySelectorAll(".buttongroup");
 let dropdown= document.querySelector(".dropdown-menu");
-
+let main = document.querySelector("main");
+let all = document.getElementById("all");
 function emojicon() {
 
     if (emoji.style.display == "block") {
@@ -25,27 +22,26 @@ function emojicon() {
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
-        buttonsRed();
+        h1Red()
         localStorage.setItem("theme", "light");
 
     }
     else {
-
         emoji.style.display = "block";
         emoji2.style.display = "none";
         img.src = "./imagens/logoblack.png";
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
-        buttonsYellow();
+        h1Yellow()
         localStorage.setItem("theme", "dark");
 
     }
 }
+
 window.onload = checkTheme();
 
 function checkTheme() {
-
     let localStorageTheme = localStorage.getItem("theme");
     if (localStorageTheme != null && localStorageTheme === "light") {
 
@@ -55,8 +51,8 @@ function checkTheme() {
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
-        buttonsRed();
-
+        h1Red()
+     
     }
     else {
 
@@ -66,7 +62,7 @@ function checkTheme() {
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
-        buttonsYellow();
+        h1Yellow()
 
     }
 }
@@ -77,8 +73,8 @@ function colorWhite() {
     dark1.style.color = "white";
     dark2.style.color = "white";
     dark3.style.color = "white";
-    h2.style.color = "white";
-    h1.style.color = "#ffc107";
+    
+
 
 }
 
@@ -88,9 +84,8 @@ function colorBlack() {
     dark1.style.color = "black";
     dark2.style.color = "black";
     dark3.style.color = "black";
-    h2.style.color = "black";
-    h1.style.color = "#fc0000";
-
+    
+   
 }
 
 function backGroundBlack() {
@@ -100,10 +95,10 @@ function backGroundBlack() {
     line1.style.backgroundColor = "white";
     line2.style.backgroundColor = "white";
     line3.style.backgroundColor = "white";
-    inicial.style.backgroundColor = "#212529";
     document.body.style.backgroundColor = "#212529";
-    botao.classList.remove("btn-outline-dark");
-    botao.classList.add("btn-light");
+    main.style.backgroundColor ="#212529";
+    all.style.backgroundColor ="#212529";
+    
 
 }
 
@@ -114,27 +109,31 @@ function backGroundWhite() {
     line1.style.backgroundColor = "black";
     line2.style.backgroundColor = "black";
     line3.style.backgroundColor = "black";
-    inicial.style.backgroundColor = "#f8f9fa";
+    main.style.backgroundColor ="#f3f5f7";
     document.body.style.backgroundColor = "white";
-    botao.classList.remove("btn-light");
-    botao.classList.add("btn-outline-dark")
+    all.style.backgroundColor ="#f3f5f7";
 
 }
-
-function buttonsYellow() {
-    for (let i = 0; i < buttons.length; i++) {
-
-        buttons[i].classList.remove("btn-outline-danger");
-        buttons[i].classList.add("btn-warning");
-
+function disableSelect(){
+    let servico = $('#servico').find(":selected").text();
+    if(servico == 'Dúvida'|| servico=="Reparo/Atualização"){
+        $("#plano").prop("disabled",true)
+    }
+    else{
+        $("#plano").prop("disabled",false)
     }
 }
-
-function buttonsRed() {
-    for (let i = 0; i < buttons.length; i++) {
-
-        buttons[i].classList.remove("btn-warning");
-        buttons[i].classList.add("btn-outline-danger");
-
+function h1Yellow(){
+    for(let i =0;i < h1.length; i++){
+        h1[i].style.color="yellow"
     }
+
 }
+function h1Red(){
+
+    for(let i =0;i < h1.length; i++){
+        h1[i].style.color="red"
+    }
+
+}
+

@@ -14,6 +14,7 @@
       <li> CSS3
        <li> JavaScript
         <li>Bootstrap
+         <li>jQuery
  </ul>
  
 <h1 > 🚀 Status do Projeto </h1>
