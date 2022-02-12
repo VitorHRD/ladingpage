@@ -1,4 +1,4 @@
-let h1 = document.querySelectorAll("h1");
+
 let inicial = document.getElementById("inicial");
 let img = document.getElementById("logo");
 let dark = document.getElementById("dark");
@@ -28,7 +28,6 @@ function emojicon() {
         colorBlack();
         backGroundWhite();
         pBlack();
-        h1Red()
         localStorage.setItem("theme", "light");
 
     }
@@ -41,7 +40,6 @@ function emojicon() {
         colorWhite();
         backGroundBlack();
         pWhite();
-        h1Yellow();
         localStorage.setItem("theme", "dark");
 
     }
@@ -61,7 +59,7 @@ function checkTheme() {
         colorBlack();
         backGroundWhite();
         pBlack();
-        h1Red()
+
      
     }
     else {
@@ -74,7 +72,7 @@ function checkTheme() {
         colorWhite();
         backGroundBlack();
         pWhite();
-        h1Yellow();
+
     
     }
 }
@@ -134,19 +132,5 @@ function pBlack(){
     for(let i = 0 ; i < p.length ;i++){
 
             p[i].style.color="black"
-    }
-}
-function h1Red(){
-
-    for(let i = 0 ; i < h1.length ;i++){
-
-            h1[i].style.color="red"
-    }
-}
-
-function h1Yellow(){
-    for(let i = 0 ; i < h1.length ;i++){
-
-            h1[i].style.color="yellow"
     }
 }

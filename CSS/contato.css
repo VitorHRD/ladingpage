@@ -146,10 +146,7 @@ img{
     font-size: 60px;
 
 }
-#textform{
-    margin-top:100px ;
-    margin-bottom: 20px;
-}
+
 #divform{
     width: 400px;
 }
@@ -206,8 +203,19 @@ form{
 #servico{
     float: left;
 }
-@media (max-width:800px){
- 
+@media (max-width:1500px){
+     input{
+         padding: 10px;
+     }
+     #all{
+         height: 87.7vh;
+     }
+h1{
+    font-size: 45px;
+}
+}
+@media (max-width:900px){
+
     #nav-list{
         display:flex;
       position: absolute;
@@ -219,8 +227,13 @@ form{
       flex-direction: column;
       align-items:center;
       justify-content: space-around;
-      transform:translateX(100%) ;
+      transform:translateX(150%) ;
       transition: transform 0.3s ease-in;
+    }
+    body{
+        overflow-x: hidden;
+        background-color: #f8f9fa;
+        height: 100vh;
     }
     #nav.list li{
       margin-left:0;
@@ -230,7 +243,46 @@ form{
       display: block;
     }
     #nav-list.active{
-      transform: translateX(0);
+      transform: translateX(30%);
+    }
+    #all{
+        display: block;
+        margin: auto;
+        height: 100vh;
+        width: 100vw;
+    }
+    img{
+        width:80px;
+        margin-left: 10px;
+        margin-right: none;
+
+    }
+    img:hover{
+        width:90px;
+    }
+    #divform{
+        width: 300px;
+        margin:auto;
+        
+    }
+    input{
+        width: 300px;
+    }
+    textarea{
+        width: 298px;
+    }
+    #redes{
+         justify-content: center;
+         width: 100vw;
+         align-items: center;
+    }
+    main{
+        width: 100vw;
+        height: 100vh;
+        background-color: #f8f9fa;
+    }
+    html{
+        background-color: #f8f9fa
     }
 }
     @keyframes navLinkFade{
