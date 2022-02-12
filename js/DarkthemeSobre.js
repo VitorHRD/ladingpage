@@ -1,4 +1,4 @@
-let h1 = document.querySelector("h1");
+let h1 = document.querySelectorAll("h1");
 let inicial = document.getElementById("inicial");
 let img = document.getElementById("logo");
 let dark = document.getElementById("dark");
@@ -14,7 +14,7 @@ let dropdown= document.querySelector(".dropdown-menu");
 let main = document.querySelector("main");
 let p = document.querySelectorAll("p");
 let sobre = document.getElementById("sobre");
-let img2 = document.getElementById("imgmain")
+let img2 = document.getElementById("imgmain");
 
 function emojicon() {
 
@@ -28,6 +28,7 @@ function emojicon() {
         colorBlack();
         backGroundWhite();
         pBlack();
+        h1Red()
         localStorage.setItem("theme", "light");
 
     }
@@ -40,6 +41,7 @@ function emojicon() {
         colorWhite();
         backGroundBlack();
         pWhite();
+        h1Yellow();
         localStorage.setItem("theme", "dark");
 
     }
@@ -59,6 +61,7 @@ function checkTheme() {
         colorBlack();
         backGroundWhite();
         pBlack();
+        h1Red()
      
     }
     else {
@@ -71,6 +74,7 @@ function checkTheme() {
         colorWhite();
         backGroundBlack();
         pWhite();
+        h1Yellow();
     
     }
 }
@@ -81,7 +85,7 @@ function colorWhite() {
     dark1.style.color = "white";
     dark2.style.color = "white";
     dark3.style.color = "white";
-    pWhite();
+
 
 }
 
@@ -91,7 +95,7 @@ function colorBlack() {
     dark1.style.color = "black";
     dark2.style.color = "black";
     dark3.style.color = "black";
-    pBlack();
+    
    
 }
 
@@ -130,5 +134,19 @@ function pBlack(){
     for(let i = 0 ; i < p.length ;i++){
 
             p[i].style.color="black"
+    }
+}
+function h1Red(){
+
+    for(let i = 0 ; i < h1.length ;i++){
+
+            h1[i].style.color="red"
+    }
+}
+
+function h1Yellow(){
+    for(let i = 0 ; i < h1.length ;i++){
+
+            h1[i].style.color="yellow"
     }
 }

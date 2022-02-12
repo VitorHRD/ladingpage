@@ -27,6 +27,7 @@ function emojicon() {
         colorBlack();
         backGroundWhite();
         pBlack();
+
         localStorage.setItem("theme", "light");
 
     }
@@ -38,6 +39,7 @@ function emojicon() {
         colorWhite();
         backGroundBlack();
         pWhite();
+ 
         localStorage.setItem("theme", "dark");
 
     }
@@ -56,6 +58,7 @@ function checkTheme() {
         colorBlack();
         backGroundWhite();
         pBlack();
+
      
     }
     else {
@@ -67,6 +70,7 @@ function checkTheme() {
         colorWhite();
         backGroundBlack();
         pWhite();
+
     
     }
     
@@ -78,7 +82,8 @@ function colorWhite() {
     dark1.style.color = "white";
     dark2.style.color = "white";
     dark3.style.color = "white";
-    subTitle.style.color ="white"
+    subTitle.style.color ="white";
+    h1.style.color ="yellow";
     
 
 }
@@ -90,6 +95,7 @@ function colorBlack() {
     dark2.style.color = "black";
     dark3.style.color = "black";
     subTitle.style.color ="black";
+    h1.style.color = "red";
    
 }
 

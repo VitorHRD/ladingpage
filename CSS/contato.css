@@ -44,6 +44,7 @@ p{
     justify-content: space-around;
     width: 700px;
     grid-gap: 10px;
+    margin-right: 45px;
     background-color: #FFFF;
 }
 a{
@@ -186,6 +187,7 @@ select{
     margin-bottom: 10px;
     border-radius: 7px;
     border: rgba(0, 0, 0, 0.644)   1.5px solid;
+    text-align: center;
 }
 form{
     text-align: center;

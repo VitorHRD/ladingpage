@@ -118,6 +118,7 @@ function disableSelect(){
     let servico = $('#servico').find(":selected").text();
     if(servico == 'Dúvida'|| servico=="Reparo/Atualização"){
         $("#plano").prop("disabled",true)
+        $("#plano1").prop("selected",true)
     }
     else{
         $("#plano").prop("disabled",false)

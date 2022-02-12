@@ -1,4 +1,4 @@
-let h1 = document.querySelector("h1");
+let h1 = document.querySelectorAll("h1");
 let h2 = document.querySelector("h2");
 let inicial = document.getElementById("inicial");
 let img = document.getElementById("logo");
@@ -25,6 +25,7 @@ function emojicon() {
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
+        h1Red();
         localStorage.setItem("theme", "light");
 
     }
@@ -35,6 +36,7 @@ function emojicon() {
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
+        h1Yellow();
         localStorage.setItem("theme", "dark");
 
     }
@@ -52,6 +54,7 @@ function checkTheme() {
         dropdown.classList.remove("dropdown-menu-dark");
         colorBlack();
         backGroundWhite();
+        h1Red();
      
     }
     else {
@@ -62,6 +65,7 @@ function checkTheme() {
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
+        h1Yellow();
     
     }
 }
@@ -111,4 +115,18 @@ function backGroundWhite() {
     main.style.backgroundColor ="#f3f5f7";
     document.body.style.backgroundColor = "white";
 
+}
+function h1Red(){
+
+    for(let i = 0 ; i < h1.length ;i++){
+
+            h1[i].style.color="red"
+    }
+}
+
+function h1Yellow(){
+    for(let i = 0 ; i < h1.length ;i++){
+
+            h1[i].style.color="yellow"
+    }
 }
