@@ -12,6 +12,7 @@ let line3 = document.getElementById("line3");
 let dropdown= document.querySelector(".dropdown-menu");
 let main = document.querySelector("main");
 let all = document.getElementById("all");
+let html = document.querySelector("html")
 function emojicon() {
 
     if (emoji.style.display == "block") {
@@ -33,6 +34,7 @@ function emojicon() {
         dropdown.classList.add("dropdown-menu-dark");
         colorWhite();
         backGroundBlack();
+
         h1Yellow()
         localStorage.setItem("theme", "dark");
 
@@ -98,6 +100,7 @@ function backGroundBlack() {
     document.body.style.backgroundColor = "#212529";
     main.style.backgroundColor ="#212529";
     all.style.backgroundColor ="#212529";
+    html.style.backgroundColor ="#212529";
     
 
 }
@@ -112,6 +115,7 @@ function backGroundWhite() {
     main.style.backgroundColor ="#f3f5f7";
     document.body.style.backgroundColor = "white";
     all.style.backgroundColor ="#f3f5f7";
+    html.style.backgroundColor="#f3f5f7";
 
 }
 function disableSelect(){

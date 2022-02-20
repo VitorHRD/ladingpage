@@ -227,7 +227,7 @@ h1{
       flex-direction: column;
       align-items:center;
       justify-content: space-around;
-      transform:translateX(150%) ;
+      transform:translateX(130%) ;
       transition: transform 0.3s ease-in;
     }
     body{
@@ -251,14 +251,14 @@ h1{
         height: 100vh;
         width: 100vw;
     }
-    img{
+    .imghover{
         width:80px;
         margin-left: 10px;
         margin-right: none;
 
     }
-    img:hover{
-        width:90px;
+    .imghover:hover{
+        width:110px;
     }
     #divform{
         width: 300px;
@@ -282,7 +282,8 @@ h1{
         background-color: #f8f9fa;
     }
     html{
-        background-color: #f8f9fa
+        background-color: #f8f9fa;
+        
     }
 }
     @keyframes navLinkFade{

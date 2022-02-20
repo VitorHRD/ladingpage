@@ -168,7 +168,7 @@ a:hover{
       #nav-list{
           display:flex;
         position: absolute;
-        top:10vh;
+        top:6.5vh;
         right: 0%;
         width: 50vw;
         height: 92vh;
@@ -203,6 +203,13 @@ a:hover{
 }
 h2{
    font-size:40px;
+}
+#buttongroup{
+    display: block;
+    text-align: center;
+}
+.buttongroup{
+    margin: 10px;
 }
 @keyframes navLinkFade{
     from{
